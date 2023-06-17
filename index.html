@@ -2,15 +2,11 @@
 <html lang="en">
 
 <head>
-	<title>HomePage</title>
+	<title>Antools</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<style>
-		body {
-			opacity: 0;
-		}
-	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230616185727">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230606225229">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,282 +14,401 @@
 
 <body>
 	<div class="wrapper">
-		<header data-scroll="100" class="header">
+		<header class="header">
 			<div class="header__container">
-				<a href="" class="header__logo">
+				<a href="" class="header__logo logo">
 					<img src="img/logo.svg" alt="Logo">
-					<img src="img/logoText.svg" alt="">
+					<span>antools.</span>
 				</a>
 				<div class="header__menu menu">
+
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">About</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
-							<a href="#" class="header__button">Join Waitlist!</a>
+							<li class="menu__item"><a href="" class="menu__link">Home</a></li>
+							<li class="menu__item">
+								<div href="" class="menu__link">Categories</div>
+								<ul class="sub-menu__list">
+									<li><a href="" class="sub-menu__link">Design</a></li>
+									<li><a href="" class="sub-menu__link">Development</a></li>
+								</ul>
+							</li>
+							<li class="menu__item"><a href="" class="menu__link">My Collections</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Blog</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<a href="#" class="header__button button">Login</a>
+					<a href="#" class="header__button button button_orange">Sign up</a>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main main-section">
+				<div class="main-section__container">
+					<div class="main-section__content">
+						<h1 class="main-section__title _anim-items _anim-no-hide">Awesome tools for
+							Designer & Developer<span>.</span></h1>
+						<div class="main-section__text text _anim-items _anim-no-hide">Antool is a web collection of information on paid or free Design and Development tools</div>
+						<div class="main-section__form _anim-items _anim-no-hide">
+							<form action="#" class="form">
+								<input data-required="email" type="Email" name="form[email]" data-error="Incorrect input" placeholder="find more than 430+ tools..." class="form__input input">
+								<button type="submit" class="form__button button button_orange">
+									Search
+								</button>
+							</form>
+						</div>
+						<div class="main-section__social social">
+							<a href="#" class="social__link _icon-facebook _anim-items _anim-no-hide"></a>
+							<a href="#" class="social__link _icon-instagram _anim-items _anim-no-hide"></a>
+							<a href="#" class="social__link _icon-twitter _anim-items _anim-no-hide"></a>
+						</div>
+					</div>
+					<div class="main-section__image _anim-items _anim-no-hide"><img src="img/mainSection.svg" alt="Image"></div>
+				</div>
+			</section>
+			<section class="page__tools tools">
+				<div class="tools__container">
+					<h2 class="tools__title title" data-watch data-watch-threshold="0.5">Most Popular Tools</h2>
+					<div class="tools__text text" data-watch data-watch-threshold="0.5">Tools for the best Designers and Developers
+						most popularly used in the world</div>
+					<div class="tools__body">
+						<div limit='6' class="tools__items" id="cards-container" data-watch>
+							<article class="tools__item item-tools">
+								<div class="item-tools__head">
+									<a href="#"><img src="img/Tools/01.svg" alt="Icon" class="item-tools__icon"></a>
+									<div class="item-tools__body">
+										<a href="#" class="item-tools__title">FIGMA</a>
+										<div class="item-tools__label">Free</div>
+									</div>
+								</div>
+								<div class="item-tools__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+								<div class="item-tools__bottom">
+									<div class="item-tools__icons">
+										<a href="#" class="item-tools__link item-tools__like _icon-heart"></a>
+										<a href="#" class="item-tools__link item-tools__folder _icon-folder"></a>
+									</div>
+									<a href="#" class="item-tools__button button">Visit</a>
+								</div>
+							</article>
+							<article class="tools__item item-tools">
+								<div class="item-tools__head">
+									<a href="#"><img src="img/Tools/02.svg" alt="Icon" class="item-tools__icon"></a>
+									<div class="item-tools__body">
+										<a href="#" class="item-tools__title">Sketch</a>
+										<div class="item-tools__label">Trial & Paid</div>
+									</div>
+								</div>
+								<div class="item-tools__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+								<div class="item-tools__bottom">
+									<div class="item-tools__icons">
+										<a href="#" class="item-tools__link item-tools__like _icon-heart"></a>
+										<a href="#" class="item-tools__link item-tools__folder _icon-folder"></a>
+									</div>
+									<a href="#" class="item-tools__button button">Visit</a>
+								</div>
+							</article>
+							<article class="tools__item item-tools">
+								<div class="item-tools__head">
+									<a href="#"><img src="img/Tools/03.svg" alt="Icon" class="item-tools__icon"></a>
+									<div class="item-tools__body">
+										<a href="#" class="item-tools__title">Visual Studio Code</a>
+										<div class="item-tools__label">Free</div>
+									</div>
+								</div>
+								<div class="item-tools__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+								<div class="item-tools__bottom">
+									<div class="item-tools__icons">
+										<a href="#" class="item-tools__link item-tools__like _icon-heart"></a>
+										<a href="#" class="item-tools__link item-tools__folder _icon-folder"></a>
+									</div>
+									<a href="#" class="item-tools__button button">Visit</a>
+								</div>
+							</article>
+							<article class="tools__item item-tools">
+								<div class="item-tools__head">
+									<a href="#"><img src="img/Tools/04.svg" alt="Icon" class="item-tools__icon"></a>
+									<div class="item-tools__body">
+										<a href="#" class="item-tools__title">Notion</a>
+										<div class="item-tools__label">Free & Paid</div>
+									</div>
+								</div>
+								<div class="item-tools__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+								<div class="item-tools__bottom">
+									<div class="item-tools__icons">
+										<a href="#" class="item-tools__link item-tools__like _icon-heart"></a>
+										<a href="#" class="item-tools__link item-tools__folder _icon-folder"></a>
+									</div>
+									<a href="#" class="item-tools__button button">Visit</a>
+								</div>
+							</article>
+							<article class="tools__item item-tools">
+								<div class="item-tools__head">
+									<a href="#"><img src="img/Tools/05.svg" alt="Icon" class="item-tools__icon"></a>
+									<div class="item-tools__body">
+										<a href="#" class="item-tools__title">Visual Studio Code</a>
+										<div class="item-tools__label">
+											<div class="item-tools__label">Free & Paid</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-tools__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+								<div class="item-tools__bottom">
+									<div class="item-tools__icons">
+										<a href="#" class="item-tools__link item-tools__like _icon-heart"></a>
+										<a href="#" class="item-tools__link item-tools__folder _icon-folder"></a>
+									</div>
+									<a href="#" class="item-tools__button button">Visit</a>
+								</div>
+							</article>
+							<article class="tools__item item-tools">
+								<div class="item-tools__head">
+									<a href="#"><img src="img/Tools/06.svg" alt="Icon" class="item-tools__icon"></a>
+									<div class="item-tools__body">
+										<a href="#" class="item-tools__title">Invision</a>
+										<div class="item-tools__label">Free & Paid</div>
+									</div>
+								</div>
+								<div class="item-tools__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+								<div class="item-tools__bottom">
+									<div class="item-tools__icons">
+										<a href="#" class="item-tools__link item-tools__like _icon-heart"></a>
+										<a href="#" class="item-tools__link item-tools__folder _icon-folder"></a>
+									</div>
+									<a href="#" class="item-tools__button button">Visit</a>
+								</div>
+							</article>
+						</div>
+						<button type="button" class="tools__button" data-watch data-watch-threshold="0.5">
+							<span>Load more</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="page__trusted trusted">
+				<div data-watch class="trusted__container">
+					<div class="trusted__body">
+						<h3 class="trusted__title" data-watch>Trusted more than 150+ brand</h3>
+						<div class="trusted__items">
+							<img src="img/Trusted/01.svg" alt="Logo" data-watch>
+							<img src="img/Trusted/02.svg" alt="Logo" data-watch>
+							<img src="img/Trusted/03.svg" alt="Logo" data-watch>
+							<img src="img/Trusted/04.svg" alt="Logo" data-watch>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__newcomer newcomer">
+				<div class="newcomer__container">
+					<div class="newcomer__content" data-watch data-watch-threshold="0.5">
+						<h2 class="newcomer__title title">
+							Newcomer Tools
+						</h2>
+						<div class="newcomer__text text">Wow! see the latest updatec of the most recommended tools from reliable designers and developers</div>
+						<a href="#" class="newcomer__button button button_orange">Explore more</a>
+					</div>
+					<div class="newcomer__items">
+						<article class="newcomer__item item-newcomer" data-watch data-watch-threshold="0.5">
+							<div class="item-newcomer__head">
+								<a href="#"><img src="img/Newcomer/01.svg" alt="Icon" class="item-newcomer__icon"></a>
+								<div class="item-newcomer__body">
+									<a href="#" class="item-newcomer__title">Zeplin</a>
+									<div class="item-newcomer__label">Free & Paid</div>
+								</div>
+							</div>
+							<div class="item-newcomer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+							<div class="item-newcomer__bottom">
+								<div class="item-newcomer__icons">
+									<a href="#" class="item-newcomer__link item-newcomer__like _icon-heart"></a>
+									<a href="#" class="item-newcomer__link item-newcomer__folder _icon-folder"></a>
+								</div>
+								<a href="#" class="item-newcomer__button button">Visit</a>
+							</div>
+						</article>
+						<article class="newcomer__item item-newcomer" data-watch data-watch-threshold="0.5">
+							<div class="item-newcomer__head">
+								<a href="#"><img src="img/Newcomer/02.svg" alt="Icon" class="item-newcomer__icon"></a>
+								<div class="item-newcomer__body">
+									<a href="#" class="item-newcomer__title">PHPStorm</a>
+									<div class="item-newcomer__label">Free</div>
+								</div>
+							</div>
+							<div class="item-newcomer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+							<div class="item-newcomer__bottom">
+								<div class="item-newcomer__icons">
+									<a href="#" class="item-newcomer__link item-newcomer__like _icon-heart"></a>
+									<a href="#" class="item-newcomer__link item-newcomer__folder _icon-folder"></a>
+								</div>
+								<a href="#" class="item-newcomer__button button">Visit</a>
+							</div>
+						</article>
+						<article class="newcomer__item item-newcomer" data-watch data-watch-threshold="0.5">
+							<div class="item-newcomer__head">
+								<a href="#"><img src="img/Newcomer/03.svg" alt="Icon" class="item-newcomer__icon"></a>
+								<div class="item-newcomer__body">
+									<a href="#" class="item-newcomer__title">Toolbox</a>
+									<div class="item-newcomer__label">Free</div>
+								</div>
+							</div>
+							<div class="item-newcomer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+							<div class="item-newcomer__bottom">
+								<div class="item-newcomer__icons">
+									<a href="#" class="item-newcomer__link item-newcomer__like _icon-heart"></a>
+									<a href="#" class="item-newcomer__link item-newcomer__folder _icon-folder"></a>
+								</div>
+								<a href="#" class="item-newcomer__button button">Visit</a>
+							</div>
+						</article>
+						<article class="newcomer__item item-newcomer" data-watch data-watch-threshold="0.5">
+							<div class="item-newcomer__head">
+								<a href="#"><img src="img/Newcomer/04.svg" alt="Icon" class="item-newcomer__icon"></a>
+								<div class="item-newcomer__body">
+									<a href="#" class="item-newcomer__title">Procreate</a>
+									<div class="item-newcomer__label">Paid</div>
+								</div>
+							</div>
+							<div class="item-newcomer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+							<div class="item-newcomer__bottom">
+								<div class="item-newcomer__icons">
+									<a href="#" class="item-newcomer__link item-newcomer__like _icon-heart"></a>
+									<a href="#" class="item-newcomer__link item-newcomer__folder _icon-folder"></a>
+								</div>
+								<a href="#" class="item-newcomer__button button">Visit</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__testimonials testimonials">
+				<div class="testimonials__container">
+					<!-- Оболонка слайдера -->
+					<div class="testimonials__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="testimonials__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="testimonials__slide swiper-slide">
+								<div class="testimonials__image">
+									<img class='testimonials__image_main' src="img/Testimonial/01.svg" alt="Image">
+									<img class='testimonials__image_circles' src="img/Testimonial/circles.svg" alt="Image">
+									<div class="testimonials__card card">
+										<div class="card__body">
+											<h6 class="card__name">Ronald Richards</h6>
+											<div class="card__work">Product Manager</div>
+										</div>
+									</div>
+								</div>
+								<div class="testimonials__text">
+									<p>Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.</p>
+								</div>
+							</div>
+							<div class="testimonials__slide swiper-slide">
+								<div class="testimonials__image">
+									<img class='testimonials__image_main' src="img/Testimonial/01.svg" alt="Image">
+									<img class='testimonials__image_circles' src="img/Testimonial/circles.svg" alt="Image">
+									<div class="testimonials__card card">
+										<div class="card__body">
+											<h6 class="card__name">Greta Simmons</h6>
+											<div class="card__work">Designer</div>
+										</div>
+									</div>
+								</div>
+								<div class="testimonials__text">
+									<p>Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.</p>
+								</div>
+							</div>
+							<div class="testimonials__slide swiper-slide">
+								<div class="testimonials__image">
+									<img class='testimonials__image_main' src="img/Testimonial/01.svg" alt="Image">
+									<img class='testimonials__image_circles' src="img/Testimonial/circles.svg" alt="Image">
+									<div class="testimonials__card card">
+										<div class="card__body">
+											<h6 class="card__name">Donald Mercury</h6>
+											<div class="card__work">Frontend Developer</div>
+										</div>
+									</div>
+								</div>
+								<div class="testimonials__text">
+									<p>Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Навігація (ліворуч/праворуч) -->
+						<button type="button" class="swiper-button-prev"></button>
+						<button type="button" class="swiper-button-next"></button>
+						<!-- Пагінація -->
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="page__contributor contributor">
+				<div class="contributor__container">
+					<div class="contributor__body">
+						<h2 class="contributor__title title" data-watch data-watch-once>
+							Become a contributor?
+						</h2>
+						<div class="contributor__text text" data-watch data-watch-threshold="0.5" data-watch-once>
+							Join us and get tips & tricks to become a great Designer and Developer
+						</div>
+						<div class="contributor__form" data-watch data-watch-threshold="0.5" data-watch-once>
+							<form action="#" class="form form_2">
+								<input type="text" name="form[email]" data-error="Error" placeholder="Enter your email..." class="form__input input">
+								<button type="submit" class="form__button button button_orange">
+									Join us
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__column">
+					<a href="#" class="footer__logo logo logo_orange">
+						<div class="logo__icon"><img src="img/logo.svg" alt="Logo"></div>
+						<span>antools.</span>
+					</a>
+					<div class="footer__copy">Copyright 2021. Antools</div>
+					<div class="footer__text">Antool is a web collection of information on paid or free Design and Development tools</div>
+				</div>
+
+				<div class="footer__column">
+					<div class="footer__label">Contact Us</div>
+					<nav class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item"><a href="tel:+621987463" class="menu-footer__link">+621987463</a></li>
+							<li class="menu-footer__item"><a href="tel:+621987463" class="menu-footer__link">M Building, No.10 A</a></li>
+							<li class="menu-footer__item"><a href="mailto:antools@awesome.com" class="menu-footer__link">antools@awesome.com</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__column">
+					<div class="footer__label">Categories</div>
+					<nav class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link">Design</a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link">Development</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__column">
+					<div class="footer__label">Company Info</div>
+					<nav class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link">About Us</a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link">Our Partners</a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link">Blog</a></li>
 						</ul>
 					</nav>
 				</div>
 
-				<button type="button" class="menu__icon icon-menu"><span></span></button>
-			</div>
-		</header>
-		<main class="page">
-			<div class="page__wrapper">
-				<section class="screen page__cannabis cannabis">
-					<div class="cannabis__container">
-						<div class="cannabis__content">
-							<div class="cannabis__label label">Banking and Blockchain Solutions</div>
-							<h1 class="cannabis__title title">
-								for the Cannabis Industry
-							</h1>
-							<div class="cannabis__text text">Staack delivers empowering financial technology to cannabis operators in the form of swift and transparent cash-flow logistics and digital business management solutions from seed-to-sale.</div>
-						</div>
-						<div class="cannabis__image">
-							<picture><source srcset="img/Cannabis/01.webp" type="image/webp"><img src="img/Cannabis/01.webp" alt="Image"></picture>
-						</div>
-					</div>
-				</section>
-				<section class="screen page__digital digital">
-					<div class="digital__container">
-						<div class="digital__content">
-							<h2 class="digital__title title">
-								Digital Banking
-							</h2>
-							<div class="digital__list list">
-								<ul>
-									<li class="digital__item item">Checking & Savings</li>
-									<li class="digital__item item">Wire Transfers & ACH</li>
-									<li class="digital__item item">Staack Debit Card (FIAT and Crypto)</li>
-									<li class="digital__item item">KYC, Anti-Money-Laundering, and Advanced Fraud Protection</li>
-								</ul>
-							</div>
-						</div>
-						<div class="digital__image">
-							<img src="img/Digital.svg" alt="Image">
-						</div>
-					</div>
-				</section>
-				<section class="screen page__chain chain">
-					<div class="chain__container">
-						<div class="chain__content">
-							<h1 class="chain__title title">
-								On-and-Off Chain Solutions
-							</h1>
-							<div class="chain__list list">
-								<ul>
-									<li class="chain__item item">Integration with Metrc for Seed-to-Sale Tracking and Compliance</li>
-									<li class="chain__item item">Cash Crypto Conversion</li>
-									<li class="chain__item item">Multi-currency Crypto Wallet </li>
-									<li class="chain__item item">Transactionality in USD and multiple Stable and Crypto Currencies</li>
-								</ul>
-							</div>
-						</div>
-						<div class="chain__image">
-							<img src="img/Chain.svg" alt="Image">
-						</div>
-					</div>
-				</section>
-				<section class="screen page__payments payments">
-					<div class="payments__container">
-						<div class="payments__image">
-							<img src="img/Payments.svg" alt="Image">
-						</div>
-						<div class="payments__content">
-							<h2 class="payments__title title">
-								<span>Send Money and</span> <br> Make payments <span>(peer-to-peer)</span>
-							</h2>
-							<div class="payments__list list">
-								<ul>
-									<li class="payments__item item">Send Money and Make payments (peer-to-peer)</li>
-									<li class="payments__item item">Cash Crypto Conversion</li>
-									<li class="payments__item item">Send or receive payments instantly in FIAT or Crypto</li>
-									<li class="payments__item item">Point-of-Banking & Payment Processing</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="screen page__staacking staacking">
-					<div class="staacking__container">
-						<div class="staacking__content">
-							<div class="staacking__label label">Reach Financial Goals</div>
-							<h1 class="staacking__title title">
-								by Staacking
-							</h1>
-							<div class="staacking__list list">
-								<ul>
-									<li class="staacking__item item">Staack helps with Business Budgeting: Savings, inventory, tax, investment, and payroll</li>
-									<li class="staacking__item item">Use smart contracts for automatic asset allocation, inventory management, and tax payments</li>
-									<li class="staacking__item item">Portfolio Management - make active and passive investments in FIAT and/or Crypto</li>
-								</ul>
-							</div>
-						</div>
-						<div class="staacking__image">
-							<img src="img/Staacking.svg" alt="Image">
-						</div>
-					</div>
-				</section>
-				<section class="screen page__cash cash">
-					<div class="cash__container">
-						<div class="cash__image">
-							<img src="img/Cash.svg" alt="Image">
-						</div>
-						<div class="cash__content">
-							<div class="cash__label label">Armored car</div>
-							<h1 class="cash__title title">
-								Cash Pick-up
-							</h1>
-							<div class="cash__list list">
-								<ul>
-									<li class="cash__item item">Schedule safe, on-site pick-ups according to your cash requirement needs</li>
-									<li class="cash__item item">Book off-site pick-ups to your partner facilities and other vendors </li>
-									<li class="cash__item item">Communicate with your driver (and other depositors) with in-app messaging </li>
-									<li class="cash__item item">Monitor your cash en route and receive deposits within one business day</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="screen page__about about">
-					<div class="about__container">
-						<div class="about__content">
-							<h2 class="about__title title">
-								About us
-							</h2>
-							<div class="about__text text">
-								<p>
-									Copy
-									We are Staack, and we believe that using duffle bags to facilitate Cannabis banking is a bit outdated.
-								</p>
-								<p>
-									We’re a California & NYC-based FinTech company and we provide mobile banking and payment solutions to the Cannabis Industry.
-								</p>
-								<p>
-									We pride ourselves on financial transparency, secure technology, and compliance for all seed-to-sale transactions in the US.
-								</p>
-							</div>
-						</div>
-						<div class="about__image">
-							<img src="img/About.svg" alt="Image">
-						</div>
-					</div>
-				</section>
-				<section class="screen page__paper paper">
-					<div class="paper__container">
-						<div class="paper__body">
-							<div class="paper__content">
-								<h3 class="paper__title">
-									Download <br> <span>our Weed Paper</span>
-								</h3>
-								<button class="paper__button">
-									Download
-								</button>
-							</div>
-							<div class="paper__image">
-								<img src="img/Paper.svg" alt="Image">
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="screen page__partners partners">
-					<div class="partners__container">
-						<div class="partners__content">
-							<h2 class="partners__title title">
-								Staack wouldn’t be here without the help of our partners.
-							</h2>
-							<div class="partners__text text">
-								<p>Staack helps agile cannabis companies remain competitive through innovative and customer-focused financial products. By combining professional cannabis insight and digital expertise, we’re transforming banking for the cannabis space as we know it.</p>
-							</div>
-						</div>
-						<div class="partners__items">
-							<a href="#"><img src="img/Partners/01.svg" alt="Logo"></a>
-							<a href="#"><img src="img/Partners/02.svg" alt="Logo"></a>
-							<a href="#"><img src="img/Partners/03.svg" alt="Logo"></a>
-							<a href="#"><img src="img/Partners/04.svg" alt="Logo"></a>
-							<a href="#"><img src="img/Partners/05.svg" alt="Logo"></a>
-							<a href="#"><img src="img/Partners/06.svg" alt="Logo"></a>
-						</div>
-					</div>
-				</section>
-				<section class="screen page__join join">
-					<div class="join__container">
-						<div class="join__body">
-							<div class="join__content">
-								<div class="join__text">
-									<p>Do you know a cannabis business that could benefit from Staack’s banking and blockchain solutions?</p>
-								</div>
-								<h2 class="join__title">
-									Join the movement!
-								</h2>
-							</div>
-							<div data-tabs data-tabs-animate="800" class="join__tabs tabs">
-								<nav data-tabs-titles class="tabs__navigation">
-									<button type="button" class="tabs__title _tab-active">Join</button>
-									<button type="button" class="tabs__title">Share</button>
-								</nav>
-								<div data-tabs-body class="tabs__content">
-									<div class="tabs__body">
-										<form class='form' action="files/sendmail/sendmail.php" method="POST">
-											<div class="input"><input type="text" name="form[email]" data-error="Error" placeholder="E-mail" class="form__input"></div>
-											<div class="input_tel"><input type="tel" data-error="Error" name="form[phone]" placeholder="Phone number" class="form__input form__input_tel"></div>
-											<button type="submit" class="form__button">Join</button>
-										</form>
-									</div>
-									<div class="tabs__body">
-										<form class='form' action="files/sendmail/sendmail.php" method="POST">
-											<div class="input"><input type="text" name="form[email]" data-error="Error" placeholder="E-mail" class="form__input"></div>
-											<div class="input_tel"><input type="tel" data-error="Error" name="form[phone]" placeholder="Phone number" class="form__input form__input_tel"></div>
-											<button type="submit" class="form__button">Share</button>
-										</form>
-									</div>
-								</div>
-							</div>
 
-						</div>
-
-					</div>
-				</section>
-				<footer class="screen footer">
-					<div class="footer__container">
-						<div class="footer__menu menu-footer">
-							<nav class="menu-footer__body">
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Home</a></li>
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Contact</a></li>
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Join Waitlist</a></li>
-								</ul>
-							</nav>
-							<a href="#" class="footer__logo header__logo">
-								<img src="img/logo.svg" alt="Logo">
-								<img src="img/logoText.svg" alt="Text">
-							</a>
-							<nav class="menu-footer__body">
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">About</a></li>
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Terms of Service</a></li>
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Privacy Policy</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="footer__social social">
-							<a href="#" class="social__item">
-								<img src="img/Footer/01.svg" alt="#">
-							</a>
-							<a href="#" class="social__item">
-								<img src="img/Footer/02.svg" alt="#">
-							</a>
-							<a href="#" class="social__item">
-								<img src="img/Footer/03.svg" alt="#">
-							</a>
-						</div>
-					</div>
-				</footer>
 			</div>
-			<div class="swiper-pagination"></div>
-			<div class="swiper-scrollbar"></div>
-		</main>
+		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230616185727"></script>
+	<script src="js/app.min.js?_v=20230606225229"></script>
 </body>
 
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js?_v=20230606225229"></script>
